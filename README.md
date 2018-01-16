@@ -1,6 +1,6 @@
 # Gentext
 
-I took a class on Computational Genomics this semester (part of a Master's in Bioinformatics and Biostatistics I'm currently studying). At some point we learnt how to add custom tracks in a genome browser like [UCSC's](http://genome.cse.ucsc.edu/cgi-bin/hgGateway) using BED, WIG and GFF formats. And I thought it could be fun to _draw_ some ASCII text in the browser as if we were just drawing some genes (with their exons and introns).
+I took a class on Computational Genomics this semester (part of a Master's in Bioinformatics and Biostatistics I'm currently studying). At some point we learnt how to add custom tracks in a genome browser like [UCSC's](http://genome.cse.ucsc.edu/cgi-bin/hgGateway) using BED, WIG and GFF formats. And I thought it could be fun to _draw_ some ASCII text in the browser as if we were just annotating some genes (with their exons and introns).
 
 So I created this silly Python 3.6 script to convert a text into custom annotation tracks using BED format:
 
@@ -21,3 +21,5 @@ chr2 80529003 80534954 Gentext 0 + 0 0 0  11 1,300,100,100,400,100,100,300,150,1
 And this is what we get copying and pasting those annotations in the [UCSC Genome Browser](http://genome.cse.ucsc.edu/cgi-bin/hgGateway):
 
 ![Gentext in action](gentext-python.png)
+
+No need to say this is __totally__ useless, but it was a fun way to play with BED format and totally learn how it works.
